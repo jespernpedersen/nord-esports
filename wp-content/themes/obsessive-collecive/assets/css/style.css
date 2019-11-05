@@ -1,5 +1,20 @@
 /* 
 -----------------------------------------------
+    COLORS
+-----------------------------------------------
+*/
+
+:root {
+    --primary-color: #d94343;
+    --secondary-color: #45e5c9;
+    --dark-text-color: #626262;
+    --white-text-color: #FFF;
+    --middle-gray-color: #f5f5f5;
+}
+
+
+/* 
+-----------------------------------------------
     RESET BROWSER STYLE
 -----------------------------------------------
 */
@@ -43,21 +58,33 @@
 -----------------------------------------------
 */
 
+body {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 h2 {
     color: #FFF;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 40px;
 }
 
 .btn {
     text-transform: uppercase;
     background-color: #FFF;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 15px 18px;
     display: inline-block;
     color: #222;
     text-decoration: none;
     margin-top: 15px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
 }
 
 
@@ -71,8 +98,12 @@ h2 {
 /* Header Layout */
 
 header.site-header {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-color: var(--middle-gray-color);
+}
+
+header.site-header .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header-wrapper {
@@ -82,17 +113,12 @@ header.site-header {
 }
 
 .header-wrapper .logo-wrapper {
-    width: 16%;
     text-align: left;
 }
 
-.header-wrapper #site-navigation {
-    width: 70%;
-}
-
 .header-wrapper #cta-player-coach {
-    width: 14%;
     text-align: right;
+    overflow: hidden;
 }
 
 header.site-header .site-logo {
@@ -110,13 +136,20 @@ header .nav-menu ul {
 header .nav-menu ul li {
     display: inline-block;
     vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 header .nav-menu ul li:after {
-    content: "|";
+    content: "/";
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
+    font-weight: normal;
+}
+
+header .nav-menu ul li:last-of-type:after {
+    content: "";
 }
 
 header .nav-menu ul li a,
@@ -125,6 +158,57 @@ header .nav-menu ul li a:focus,
 header .nav-menu ul li a:active {
     text-decoration: none;
     color: #222;
+    text-transform: uppercase;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Call to Action Buttons in Header */
+
+#cta-player-coach span {
+    opacity: 0.3;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#cta-player-coach .btn-player,
+#cta-player-coach .btn-coach {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 13px;
+    padding-right: 10px;
+    color: var(--white-text-color);
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#cta-player-coach .btn-player {
+    background-color: var(--primary-color);
+    position: relative;
+    padding-right: 8px;
+}
+
+#cta-player-coach .btn-player:after {
+    content: "";
+    background-color: var(--primary-color);
+    height: 45px;
+    position: absolute;
+    width: 15px;
+    left: 94%;
+    top: -5px;
+    transform: rotate(18deg);
+}
+
+#cta-player-coach .btn-coach {
+    background-color: var(--secondary-color);
+    padding-left: 20px;
 }
 
 

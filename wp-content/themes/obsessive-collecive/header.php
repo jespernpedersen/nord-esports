@@ -29,6 +29,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js?ver=3.7.0" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
+<link rel="stylesheet" href="https://use.typekit.net/lbk0riy.css">
 </head>
 
 <body <?php body_class(); ?>>
@@ -37,7 +38,9 @@
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo-wrapper">
-                    <img src="/nord-esports/wp-content/uploads/2019/11/512x200.png" alt="logo" title="Køge Nord eSports" class="site-logo" />
+                    <a href="/nord-esports/" title="Go to frontpage">
+                        <img src="/nord-esports/wp-content/uploads/2019/11/512x200.png" alt="logo" title="Køge Nord eSports" class="site-logo" />
+                    </a>
                 </div>
 
                 <nav id="site-navigation" class="main-navigation" role="navigation">	
