@@ -114,6 +114,48 @@ p {
     font-size: 16px;
 }
 
+.overlay {
+    position: relative;
+}
+
+.overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.overlay-primary:before {
+    box-shadow: inset -30px 130px 135px var(--primary-color);
+}
+
+.overlay-lol-game:before {
+    box-shadow: inset -30px 130px 135px var(--game-lol);
+}
+
+.overlay-primary-small:before {
+    box-shadow: inset -1px 67px 97px var(--primary-color);
+}
+
+.overlay-content {
+    position: relative;
+    z-index: 3;
+}
+
 
 /* 
 -----------------------------------------------
@@ -155,19 +197,19 @@ header.site-header .site-logo {
 
 /* Menu */
 
-header .nav-menu ul {
+header #primary-menu {
     list-style: none;
     text-align: center;
 }
 
-header .nav-menu ul li {
+header #primary-menu li {
     display: inline-block;
     vertical-align: middle;
     font-size: 18px;
     font-weight: bold;
 }
 
-header .nav-menu ul li:after {
+header #primary-menu li:after {
     content: "/";
     margin-left: 10px;
     margin-right: 10px;
@@ -175,14 +217,14 @@ header .nav-menu ul li:after {
     font-weight: normal;
 }
 
-header .nav-menu ul li:last-of-type:after {
+header #primary-menu li:last-of-type:after {
     content: "";
 }
 
-header .nav-menu ul li a,
-header .nav-menu ul li a:hover,
-header .nav-menu ul li a:focus,
-header .nav-menu ul li a:active {
+header #primary-menu li a,
+header #primary-menu li a:hover,
+header #primary-menu li a:focus,
+header #primary-menu li a:active {
     text-decoration: none;
     color: #222;
     text-transform: uppercase;
@@ -284,32 +326,8 @@ footer {
     background-position: center center;
 }
 
-.players-coach .player:before,
-.players-coach .coach:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
 .players-coach .player:before {
     box-shadow: inset 107px 172px 285px var(--primary-color);
-}
-
-.players-coach .player:after,
-.players-coach .coach:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.3;
-    z-index: 1;
 }
 
 .players-coach .coach {
@@ -385,7 +403,7 @@ footer {
 
 .blog h2 {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     color: var(--primary-color);
 }
 
@@ -527,22 +545,6 @@ footer {
     z-index: 2;
 }
 
-.featured-event .container .event-bg-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.3;
-    z-index: 1;
-}
-
-.featured-event .container .event-bg-image.league-of-legends-game:before {
-    box-shadow: inset -30px 130px 135px var(--game-lol);
-}
-
 .featured-event h3 {
     margin-bottom: 15px;
     position: relative;
@@ -558,5 +560,3 @@ footer {
     position: relative;
     z-index: 3;
 }
-
-.featured-event .small-btn {}

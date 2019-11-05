@@ -13,14 +13,14 @@ get_header();
     <!-- Become A Player / Become A Coach -->
     <section class="players-coach">
         <div class="container">
-            <section class="player">
+            <section class="player overlay overlay-primary">
                 <div class="inner">
                     <h2>Become <br />A Player</h2>
                     <p>Oat cake gingerbread oat cake pier bear claw tiramisu toffee souffle chocolate cake. Jelly oat cake danish croissant apple pie biscuit gummi bears.</p>
                     <a class="btn primary" href="#" title="">Sign up</a>
                 </div>
             </section>
-            <section class="coach">
+            <section class="coach overlay overlay-secondary">
                 <div class="inner">
                     <h2>Become <br />A Coach</h2>
                     <p>Oat cake gingerbread oat cake pier bear claw tiramisu toffee souffle chocolate cake. Jelly oat cake danish croissant apple pie biscuit gummi bears.</p>
@@ -52,7 +52,7 @@ get_header();
     <!-- Featured Event -->
     <section class="featured-event">
         <div class="container">
-            <div class="event-bg-image league-of-legends-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/1_ZF-E6Z4iLzCGwtavfPRp6g.png')">
+            <div class="event-bg-image overlay overlay-lol-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/1_ZF-E6Z4iLzCGwtavfPRp6g.png')">
                 <h3>League of Legends</h3>
                 <h2>TOMORROW 13. FRIDAY</h3>
                 <a href="#" class="btn small-btn" title="Attend this event">Attend</a>
@@ -65,24 +65,30 @@ get_header();
             <h2>Blog</h2>
             <div class="grid-layout layout-3">
                 <div class="blog-item">
-                    <div class="bg-image" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/345x222.png') ">
-                        <h3>Title</h3>
-                        <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
-                        <a href="#" class="btn" title="">Read More</a>
+                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/345x222.png') ">
+                        <div class="overlay-content">
+                            <h3>Title</h3>
+                            <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
+                            <a href="#" class="btn" title="">Read More</a>
+                        </div>
                     </div>
                 </div>
                 <div class="blog-item">
-                    <div class="bg-image" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/345x222.png') ">
-                        <h3>Title</h3>
-                        <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
-                        <a href="#" class="btn" title="">Read More</a>
+                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/345x222.png') ">
+                        <div class="overlay-content">
+                            <h3>Title</h3>
+                            <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
+                            <a href="#" class="btn" title="">Read More</a>
+                        </div>
                     </div>
                 </div>
                 <div class="blog-item">
-                    <div class="bg-image" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/345x222.png') ">
-                        <h3>Title</h3>
-                        <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
-                        <a href="#" class="btn" title="">Read More</a>
+                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/345x222.png') ">
+                        <div class="overlay-content">
+                            <h3>Title</h3>
+                            <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
+                            <a href="#" class="btn" title="">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
