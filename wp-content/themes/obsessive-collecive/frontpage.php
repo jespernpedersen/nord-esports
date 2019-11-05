@@ -49,6 +49,16 @@ get_header();
             </div>
         </div>
     </section>
+    <!-- Featured Event -->
+    <section class="featured-event">
+        <div class="container">
+            <div class="event-bg-image league-of-legends-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/1_ZF-E6Z4iLzCGwtavfPRp6g.png')">
+                <h3>League of Legends</h3>
+                <h2>TOMORROW 13. FRIDAY</h3>
+                <a href="#" class="btn small-btn" title="Attend this event">Attend</a>
+            </div>
+        </div>
+    </section>
     <!-- Blog -->
     <section class="blog" class="green-bg">
         <div class="container">
@@ -104,7 +114,11 @@ get_header();
     <section class="sponsors">
         <div class="container">
             <div class="sponsor-gallery">
-                <img src="#" alt="" title="" />
+                <img src="/nord-esports/wp-content/uploads/2019/11/Lunds-auto.jpg" alt="" title="" />
+                <img src="/nord-esports/wp-content/uploads/2019/11/Hilden-design.png" alt="" title="" />
+                <img src="/nord-esports/wp-content/uploads/2019/11/Coop-Superbrugsen.png" alt="" title="" />
+                <img src="/nord-esports/wp-content/uploads/2019/11/Køge-Kommune-special-træk.jpg" alt="" title="" />  
+                <img src="/nord-esports/wp-content/uploads/2019/11/Microbizz.png" alt="" title="" />         
             </div>
         </div>
     </section>
