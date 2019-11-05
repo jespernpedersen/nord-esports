@@ -55,7 +55,7 @@
                 </nav><!-- #site-navigation -->
 
                 <div id="cta-player-coach">
-                    <span>Become a</span>
+                    <span>Become a:</span>
                     <a href="#" class="btn-player" title="">Player</a>
                     <a href="#" class="btn-coach" title="">Coach</a>
                 </div>

@@ -75,16 +75,36 @@ h2 {
 
 .btn {
     text-transform: uppercase;
-    background-color: #FFF;
-    padding: 15px 18px;
+    background-color: var(--middle-gray-color);
+    color: var(--primary-color);
+    padding: 12px 15px;
     display: inline-block;
-    color: #222;
     text-decoration: none;
     margin-top: 15px;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+.secondary-btn {
+    background-color: var(--primary-color);
+    color: var(--white-text-color);
+}
+
+.btn+.btn {
+    margin-left: 20px;
+}
+
+p+p {
+    margin-top: 25px;
+}
+
+p {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 
@@ -178,7 +198,7 @@ header .nav-menu ul li a:active {
 #cta-player-coach .btn-coach {
     display: inline-block;
     vertical-align: middle;
-    padding: 7px 13px;
+    padding: 5px 10px;
     padding-right: 10px;
     color: var(--white-text-color);
     text-decoration: none;
@@ -218,6 +238,10 @@ header .nav-menu ul li a:active {
 -----------------------------------------------
 */
 
+footer {
+    background-color: black;
+}
+
 
 /* 
 -----------------------------------------------
@@ -226,10 +250,13 @@ header .nav-menu ul li a:active {
 */
 
 .players-coach .container {
-    /* Placeholder */
-    color: #FFF;
+    color: var(--white-text-color);
     position: relative;
-    height: 547px;
+    height: 707px;
+}
+
+.players-coach .btn {
+    color: var(--dark-text-color);
 }
 
 .players-coach .player,
@@ -242,22 +269,28 @@ header .nav-menu ul li a:active {
 .players-coach .player {
     left: 0;
     top: 0;
-    background-image: url(http://via.placeholder.com/350x150/ffcc99);
+    background-image: url(/nord-esports/wp-content/uploads/2019/11/68446720_2543504322359731_4143733934070431744_n.jpg);
     -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 128% 0%, 0% 81%, 0% 100%);
+    background-size: auto 100%;
+    background-position: center center;
+    box-shadow: inset 107px 172px 285px var(--primary-color);
 }
 
 .players-coach .coach {
     right: 0;
     top: 0;
-    background-image: url(http://via.placeholder.com/350x150/fc9fc9);
+    background-image: url(/nord-esports/wp-content/uploads/2019/11/68446720_2543504322359731_4143733934070431744_n.jpg);
     -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(129% 0, 100% 0%, 100% 100%, -29% 100%);
+    background-size: auto 100%;
+    background-position: center center;
+    box-shadow: inset -107px -172px 285px var(--secondary-color);
 }
 
 .players-coach .player .inner {
-    padding-left: 81px;
-    padding-top: 83px;
+    padding-left: 60px;
+    padding-top: 40px;
     max-width: 400px;
 }
 
@@ -267,8 +300,8 @@ header .nav-menu ul li a:active {
     bottom: 0;
     max-width: 400px;
     text-align: right;
-    padding-right: 81px;
-    padding-bottom: 83px;
+    padding-right: 60px;
+    padding-bottom: 40px;
 }
 
 
@@ -281,14 +314,20 @@ header .nav-menu ul li a:active {
 .about .container {
     padding: 85px 65px;
     background-color: #FFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
 }
 
 .about h2 {
-    color: #ef0000;
+    color: var(--primary-color);
     text-transform: uppercase;
     font-size: 40px;
-    /* subject to change */
     margin-bottom: 20px;
+}
+
+.about .container p:last-of-type {
+    margin-bottom: 40px;
 }
 
 
@@ -300,13 +339,48 @@ header .nav-menu ul li a:active {
 
 .blog .container {
     padding: 85px 65px;
-    background-color: #004648;
-    color: #FFF;
+    color: var(--dark-text-color);
 }
 
 .blog h2 {
     text-align: center;
     margin-bottom: 80px;
+    color: var(--primary-color);
+}
+
+.blog .blog-item {
+    height: 222px;
+    /* placeholder */
+}
+
+.blog .blog-item .bg-image {
+    height: 100%;
+    padding: 17px 20px;
+    text-align: center;
+}
+
+.blog .blog-item h3 {
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.blog .blog-item p {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--white-text-color);
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.blog .blog-item .btn {
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--dark-text-color);
 }
 
 
@@ -318,4 +392,44 @@ header .nav-menu ul li a:active {
 
 .sponsors .container {
     padding: 85px 65px;
+}
+
+
+/* 
+-----------------------------------------------
+    SECTION: TWITCH/YOUTUBE
+-----------------------------------------------
+*/
+
+.video-platforms {
+    background-color: var(--primary-color);
+    padding: 60px 0;
+}
+
+.video-platforms h3 {
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.video-platforms .container,
+.video-platforms .twitch {
+    height: 100%;
+}
+
+.video-platforms .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    height: 320px;
+    margin-bottom: 60px;
+}
+
+.video-platforms .twitch iframe {
+    height: 100%;
+    width: 100%;
 }
