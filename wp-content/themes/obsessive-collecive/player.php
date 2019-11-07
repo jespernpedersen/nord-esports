@@ -12,7 +12,7 @@ get_header();
 <main>
     <section class="team">
         <div class="event-wrapper">
-            <div class="event-bg-image overlay overlay-fortnite-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/1_ZF-E6Z4iLzCGwtavfPRp6g.png')">
+            <div class="event-bg-image overlay overlay-fortnite-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/fortnitebg.jpg')">
                 <div class="xs-container">
                     <div class="text-wrapper">
                         <h2>Fortnite</h2>
@@ -29,7 +29,7 @@ get_header();
 
     <section class="team reverse">
         <div class="event-wrapper">
-            <div class="event-bg-image overlay overlay-lol-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/1_ZF-E6Z4iLzCGwtavfPRp6g.png')">
+            <div class="event-bg-image overlay overlay-lol-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/lolbg.jpg')">
                 <div class="xs-container">
                     <div class="text-wrapper">
                         <h2>League of Legends</h2>
@@ -46,7 +46,7 @@ get_header();
 
     <section class="team">
         <div class="event-wrapper">
-            <div class="event-bg-image overlay overlay-csgo-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/1_ZF-E6Z4iLzCGwtavfPRp6g.png')">
+            <div class="event-bg-image overlay overlay-csgo-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/csgobg.jpg')">
                 <div class="xs-container">
                     <div class="text-wrapper">
                         <h2>CS:GO</h2>

@@ -49,7 +49,7 @@ get_header();
                 <a class="btn grey-btn" href="#" title="">Read More</a><a class="btn secondary-btn" href="#" title="">Contact Us</a>
             </div>
             <div class="column">
-                <img src="/nord-esports/wp-content/uploads/2019/11/600x594.png" title="" alt="" /> <!-- placeholder image -->
+                <img src="/nord-esports/wp-content/uploads/2019/11/about1.jpg" title="" alt="" /> <!-- placeholder image -->
             </div>
         </div>
     </section>
@@ -69,7 +69,7 @@ get_header();
             <h2>Blog</h2>
             <div class="grid-layout layout-3">
                 <div class="blog-item">
-                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/345x222.png') ">
+                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/blogfrontpage1.jpg') ">
                         <div class="overlay-content">
                             <h3>Title</h3>
                             <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
@@ -78,7 +78,7 @@ get_header();
                     </div>
                 </div>
                 <div class="blog-item">
-                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/345x222.png') ">
+                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/blogfrontpage2.jpg') ">
                         <div class="overlay-content">
                             <h3>Title</h3>
                             <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
@@ -87,7 +87,7 @@ get_header();
                     </div>
                 </div>
                 <div class="blog-item">
-                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/345x222.png') ">
+                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/blogfrontpage3.jpg') ">
                         <div class="overlay-content">
                             <h3>Title</h3>
                             <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
@@ -102,7 +102,6 @@ get_header();
     <section class="video-platforms">
         <div class="container">
             <div class="twitch">
-                <h3>Twitch Live-Streams</h3>
                 <iframe
                     src="https://player.twitch.tv/?channel=monstercat&muted=true&autoplay=false"
                     height="<height>"
@@ -113,7 +112,6 @@ get_header();
                 </iframe>         
             </div><!-- .twitch end -->
             <div class="youtube-embed">
-                <h3>Vores YouTube Kanal</h3>
             <iframe id="ytplayer" type="text/html" width="100%" height="100%"
             src="https://www.youtube.com/embed/NBsCzN-jfvA"
             frameborder="0"></iframe>
@@ -124,11 +122,12 @@ get_header();
     <section class="sponsors">
         <div class="container">
             <div class="sponsor-gallery">
-                <img src="/nord-esports/wp-content/uploads/2019/11/Lunds-auto.jpg" alt="" title="" />
-                <img src="/nord-esports/wp-content/uploads/2019/11/Hilden-design.png" alt="" title="" />
-                <img src="/nord-esports/wp-content/uploads/2019/11/Coop-Superbrugsen.png" alt="" title="" />
-                <img src="/nord-esports/wp-content/uploads/2019/11/Køge-Kommune-special-træk.jpg" alt="" title="" />  
-                <img src="/nord-esports/wp-content/uploads/2019/11/Microbizz.png" alt="" title="" />         
+                <img src="/nord-esports/wp-content/uploads/2019/11/lundsauto.png" alt="" title="" />
+                <img src="/nord-esports/wp-content/uploads/2019/11/hilden.png" alt="" title="" />
+                <img src="/nord-esports/wp-content/uploads/2019/11/adenait.png" alt="" title="" />
+                <img src="/nord-esports/wp-content/uploads/2019/11/superbrugsen.png" alt="" title="" />
+                <img src="/nord-esports/wp-content/uploads/2019/11/kk.png" alt="" title="" />  
+                <img src="/nord-esports/wp-content/uploads/2019/11/microbizz.png" alt="" title="" />         
             </div>
         </div>
     </section>

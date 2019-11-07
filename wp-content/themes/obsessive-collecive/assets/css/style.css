@@ -215,11 +215,13 @@ header.site-header .container {
 
 .header-wrapper .logo-wrapper {
     text-align: left;
+    width: 270px;
 }
 
 .header-wrapper #cta-player-coach {
     text-align: right;
     overflow: hidden;
+    width: 270px;
 }
 
 header.site-header .site-logo {
@@ -247,6 +249,7 @@ header #primary-menu li:after {
     margin-right: 10px;
     vertical-align: middle;
     font-weight: normal;
+    font-size: 24px;
 }
 
 header #primary-menu li:last-of-type:after {
@@ -394,7 +397,7 @@ footer.site-footer nav li:last-of-type::after {
 .players-coach .inner-wrapper {
     color: var(--white-text-color);
     position: relative;
-    height: 707px;
+    height: calc(100vh - 82px);
 }
 
 .players-coach .btn {
@@ -425,10 +428,10 @@ footer.site-footer nav li:last-of-type::after {
 .players-coach .coach {
     right: 0;
     top: 0;
-    background-image: url(/nord-esports/wp-content/uploads/2019/11/68446720_2543504322359731_4143733934070431744_n.jpg);
+    background-image: url(/nord-esports/wp-content/uploads/2019/11/becomeacoach.jpg);
     -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(129% 0, 100% 0%, 100% 100%, -29% 100%);
-    background-size: auto 100%;
+    background-size: 100% auto;
     background-position: center center;
 }
 
@@ -463,7 +466,8 @@ footer.site-footer nav li:last-of-type::after {
 */
 
 .about .container {
-    padding: 85px 65px;
+    padding-top: 85px;
+    padding-bottom: 85px;
     background-color: #FFF;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -481,6 +485,10 @@ footer.site-footer nav li:last-of-type::after {
     margin-bottom: 40px;
 }
 
+.about img {
+    max-width: 100%;
+}
+
 
 /* 
 -----------------------------------------------
@@ -489,7 +497,8 @@ footer.site-footer nav li:last-of-type::after {
 */
 
 .blog .container {
-    padding: 60px 65px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: var(--dark-text-color);
 }
 
@@ -508,6 +517,8 @@ footer.site-footer nav li:last-of-type::after {
     height: 100%;
     padding: 17px 20px;
     text-align: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .blog .blog-item h3 {
@@ -542,18 +553,19 @@ footer.site-footer nav li:last-of-type::after {
 */
 
 .sponsors .container {
-    padding: 85px 0px;
+    /* padding: 0 0px; */
 }
 
 .sponsors .container .sponsor-gallery {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 .sponsors .container .sponsor-gallery img {
-    max-height: 60px;
-    width: auto;
+    max-height: 160px;
+    /* width: auto; */
 }
 
 .sponsors .container .sponsor-gallery img:not(:last-of-type) {
@@ -585,13 +597,14 @@ footer.site-footer nav li:last-of-type::after {
 .video-platforms .container,
 .video-platforms .twitch {
     height: 100%;
+    min-height: 320px;
 }
 
 .video-platforms .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
-    height: 320px;
+    /* height: 320px; */
     /* margin-bottom: 60px; */
 }
 
