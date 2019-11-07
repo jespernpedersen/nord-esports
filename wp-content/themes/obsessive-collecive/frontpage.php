@@ -12,19 +12,23 @@ get_header();
 <main>
     <!-- Become A Player / Become A Coach -->
     <section class="players-coach">
-        <div class="container">
+        <div class="inner-wrapper">
             <section class="player overlay overlay-primary">
-                <div class="inner">
-                    <h2>Become <br />A Player</h2>
-                    <p>Oat cake gingerbread oat cake pier bear claw tiramisu toffee souffle chocolate cake. Jelly oat cake danish croissant apple pie biscuit gummi bears.</p>
-                    <a class="btn primary" href="#" title="">Sign up</a>
+                <div class="container">
+                    <div class="inner">
+                        <h2>Become <br />A Player</h2>
+                        <p>Oat cake gingerbread oat cake pier bear claw tiramisu toffee souffle chocolate cake. Jelly oat cake danish croissant apple pie biscuit gummi bears.</p>
+                        <a class="btn primary" href="#" title="">Sign up</a>
+                    </div>
                 </div>
             </section>
             <section class="coach overlay overlay-secondary">
-                <div class="inner">
-                    <h2>Become <br />A Coach</h2>
-                    <p>Oat cake gingerbread oat cake pier bear claw tiramisu toffee souffle chocolate cake. Jelly oat cake danish croissant apple pie biscuit gummi bears.</p>
-                    <a class="btn primary" href="#" title="">Sign up</a>
+                <div class="container">
+                    <div class="inner">
+                        <h2>Become <br />A Coach</h2>
+                        <p>Oat cake gingerbread oat cake pier bear claw tiramisu toffee souffle chocolate cake. Jelly oat cake danish croissant apple pie biscuit gummi bears.</p>
+                        <a class="btn primary" href="#" title="">Sign up</a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -51,7 +55,7 @@ get_header();
     </section>
     <!-- Featured Event -->
     <section class="featured-event">
-        <div class="container">
+        <div class="event-wrapper">
             <div class="event-bg-image overlay overlay-lol-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/1_ZF-E6Z4iLzCGwtavfPRp6g.png')">
                 <h3>League of Legends</h3>
                 <h2>TOMORROW 13. FRIDAY</h3>

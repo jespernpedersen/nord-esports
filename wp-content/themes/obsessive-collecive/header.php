@@ -39,7 +39,7 @@
             <div class="header-wrapper">
                 <div class="logo-wrapper">
                     <a href="/nord-esports/" title="Go to frontpage">
-                        <img src="/nord-esports/wp-content/uploads/2019/11/512x200.png" alt="logo" title="Køge Nord eSports" class="site-logo" />
+                        <img src="/nord-esports/wp-content/uploads/2019/11/logo.png" alt="logo" title="Køge Nord eSports" class="site-logo" />
                     </a>
                 </div>
 
@@ -54,7 +54,7 @@
 
                 <div id="cta-player-coach">
                     <span>Become a:</span>
-                    <a href="#" class="btn-player" title="">Player</a>
+                    <a href="/nord-esports/become-a-player/" class="btn-player" title="Become A Player">Player</a>
                     <a href="#" class="btn-coach" title="">Coach</a>
                 </div>
             </div>

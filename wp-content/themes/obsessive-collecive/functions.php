@@ -33,6 +33,9 @@ function jnp_nav_init() {
 	register_nav_menus( array(
 		'menu-1' => 'Primary Menu',
 	) );
+	register_nav_menus( array(
+		'menu-2' => 'Footer Menu',
+	) );
 }
 add_action( 'init', 'jnp_nav_init' );
 
