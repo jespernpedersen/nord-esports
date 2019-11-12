@@ -16,18 +16,18 @@ get_header();
             <section class="player overlay overlay-primary">
                 <div class="container">
                     <div class="inner">
-                        <h2>Become <br />A Player</h2>
-                        <p>Oat cake gingerbread oat cake pier bear claw tiramisu toffee souffle chocolate cake. Jelly oat cake danish croissant apple pie biscuit gummi bears.</p>
-                        <a class="btn primary" href="#" title="">Sign up</a>
+                        <h2><?php echo get_field("player_title") ?></h2>
+                        <p><?php echo get_field("player_paragraph_content") ?></p>
+                        <a class="btn primary" href="<?php echo get_field("player_button__link") ?>" title=""><?php echo get_field("player_button_text") ?></a>
                     </div>
                 </div>
             </section>
             <section class="coach overlay overlay-secondary">
                 <div class="container">
                     <div class="inner">
-                        <h2>Become <br />A Coach</h2>
-                        <p>Oat cake gingerbread oat cake pier bear claw tiramisu toffee souffle chocolate cake. Jelly oat cake danish croissant apple pie biscuit gummi bears.</p>
-                        <a class="btn primary" href="#" title="">Sign up</a>
+                        <h2><?php echo get_field("coach_title") ?></h2>
+                        <p><?php echo get_field("coach_paragraph_content") ?></p>                        
+                        <a class="btn primary" href="<?php echo get_field("coach_button__link") ?>" title=""><?php echo get_field("coach_button_text") ?></a>
                     </div>
                 </div>
             </section>
