@@ -783,3 +783,60 @@ section.team {
     align-items: center;
     justify-content: flex-end;
 }
+
+main {
+    min-height: calc(100vh - 232px);
+}
+
+
+/* 
+-----------------------------------------------
+    PAGE: EVENTS
+-----------------------------------------------
+*/
+
+.all-events {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-size: 100% auto;
+    position: relative;
+    color: #FFF;
+    padding: 60px 0;
+}
+
+.event-item:before {
+    content: "";
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.event-item span {
+    color: #FFF;
+}
+
+.event-item>* {
+    position: relative;
+    z-index: 2;
+}
+
+.event-item h2 {
+    color: #FFF;
+    margin-top: 15px;
+}
+
+.event-item .btn {
+    color: #222;
+}
