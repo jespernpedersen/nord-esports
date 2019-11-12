@@ -37,14 +37,13 @@ get_header();
     <section class="about">
         <div class="container">
             <div class="column">
-                <h2>About</h2>                        
-                <p>Marzipan candy canes apple pie croissant dessert gummies pastry jelly. Jelly-o cheesecake caramels. Wafer liquorice chocolate lemon drops apple pie gummi bears. Biscuit chocolate bar marzipan chocolate bar pastry marzipan topping.</p>
-                <p>Jelly-o sweet roll tootsie roll cheesecake. Lemon drops toffee halvah. Soufflé dessert pie gummies danish dessert chocolate cake gummi bears. Tootsie roll donut marzipan wafer topping cupcake.</p><p>Macaroon lemon drops donut. Macaroon bear claw jelly-o jelly-o sweet lemon drops. Gingerbread caramels macaroon apple pie dessert sweet soufflé sweet roll.</p>
-                <p>Sweet sweet pudding bear claw marzipan lemon drops sweet roll gummi bears jelly. Gingerbread lemon drops chocolate cake gummi bears. Topping cotton candy cake wafer pudding sweet roll pie toffee sweet roll.  </p>
-                <a class="btn grey-btn" href="#" title="">Read More</a><a class="btn secondary-btn" href="#" title="">Contact Us</a>
+                <h2><?php echo get_field("about_title") ?></h2>                     
+                <?php echo get_field("about_paragraph_content"); ?>
+                <a class="btn grey-btn" href="<?php echo get_field("about_readmore_button_link") ?>" title="Her kan du læse mere om hvem vi er"><?php echo get_field("about_readmore_button_text") ?></a>
+                <a class="btn secondary-btn"  href="<?php echo get_field("about_contact_button_link") ?>" title="Her kan du kontakte os hvis du har spørgsmål"><?php echo get_field("about_contact_button_text") ?></a>
             </div>
             <div class="column">
-                <img src="/nord-esports/wp-content/uploads/2019/11/about1.jpg" title="" alt="" />
+                <img src="<?php echo get_field("about_image")["url"] ?>" title="<?php echo get_field("about_image")["alt"] ?>" alt="<?php echo get_field("about_image")["caption"] ?>" />
             </div>
         </div>
     </section>
