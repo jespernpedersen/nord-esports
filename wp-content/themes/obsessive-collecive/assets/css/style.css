@@ -167,11 +167,11 @@ p {
     box-shadow: inset -30px 130px 135px var(--primary-color);
 }
 
-.overlay-lol-game:before {
+.overlay.overlay-game.league-of-legends:before {
     box-shadow: inset -30px 130px 135px var(--game-lol);
 }
 
-.overlay-fortnite-game:before {
+.overlay.overlay-game.fortnite:before {
     box-shadow: inset -30px 130px 135px var(--primary-color);
 }
 

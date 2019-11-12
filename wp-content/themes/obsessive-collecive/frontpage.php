@@ -48,15 +48,30 @@ get_header();
         </div>
     </section>
     <!-- Featured Event -->
-    <section class="featured-event">
-        <div class="event-wrapper">
-            <div class="event-bg-image overlay overlay-lol-game" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/1_ZF-E6Z4iLzCGwtavfPRp6g.png')">
-                <h3>League of Legends</h3>
-                <h2>TOMORROW 13. FRIDAY</h3>
-                <a href="#" class="btn small-btn" title="Attend this event">Attend</a>
-            </div>
-        </div>
-    </section>
+    <?php 
+    $posts = get_posts( array(
+        'post_type'      => 'event',
+        'order'          => 'DESC',
+        'orderby'        => 'meta_value',
+        'meta_key'       => 'is_post_featured',
+    ));
+
+    if( $posts ) {
+        foreach( $posts as $post ) {
+            ?>
+            <section class="featured-event">
+                <div class="event-wrapper">
+                    <div class="event-bg-image overlay overlay-game <?php echo get_the_category($post->ID)[0]->slug; ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID);  ?>')">
+                        <h3><?php echo get_the_category($post->ID)[0]->name; ?></h3>
+                        <h2><?php echo get_the_title($post->ID) . ' ' . get_field("event_date"); ?> </h2>
+                        <a href="<?php echo get_field("event_link"); ?>" class="btn small-btn" title="Attend this event">Attend</a>
+                    </div>
+                </div>
+            </section>
+            <?php
+        }
+    }
+    ?>
     <!-- Blog -->
     <section class="blog">
         <div class="container">
