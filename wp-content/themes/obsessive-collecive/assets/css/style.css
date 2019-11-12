@@ -276,7 +276,7 @@ header #primary-menu li a:active {
     opacity: 0.3;
     text-transform: uppercase;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
     height: 29px;
     line-height: 29px;
 }
@@ -308,7 +308,7 @@ header #primary-menu li a:active {
     height: 45px;
     position: absolute;
     width: 15px;
-    left: 90%;
+    left: 90.1%;
     top: -5px;
     transform: rotate(18deg);
 }
@@ -343,7 +343,6 @@ footer ul {
 footer.site-footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 120px;
 }
 
 footer.site-footer .footer-address>* {
@@ -428,7 +427,7 @@ footer.site-footer nav li:last-of-type::after {
 .players-coach .coach {
     right: 0;
     top: 0;
-    background-image: url(/nord-esports/wp-content/uploads/2019/11/becomeacoach.jpg);
+    background-image: url(/nord-esports/wp-content/uploads/2019/11/becomeacoachnew-3.jpg);
     -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(129% 0, 100% 0%, 100% 100%, -29% 100%);
     background-size: 100% auto;
@@ -442,7 +441,7 @@ footer.site-footer nav li:last-of-type::after {
 .players-coach .player .inner {
     padding-left: 0;
     padding-top: 70px;
-    max-width: 400px;
+    max-width: 300px;
     position: relative;
     z-index: 3;
 }
@@ -451,7 +450,7 @@ footer.site-footer nav li:last-of-type::after {
     position: absolute;
     right: 0;
     bottom: 0;
-    max-width: 400px;
+    max-width: 300px;
     text-align: right;
     padding-right: 0;
     padding-bottom: 70px;
@@ -664,6 +663,42 @@ footer.site-footer nav li:last-of-type::after {
     color: #000;
     position: relative;
     z-index: 3;
+}
+
+
+/* 
+-----------------------------------------------
+    SECTION: DISCORD
+-----------------------------------------------
+*/
+
+section.discord {
+    padding-top: 33px;
+    padding-bottom: 23px;
+    background-color: var(--middle-gray-color);
+}
+
+section.discord .container {
+    text-align: center;
+}
+
+section.discord h2 {
+    color: #626262;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+section.discord a {
+    vertical-align: -webkit-baseline-middle;
+    display: inline-block;
+}
+
+section.discord a img {
+    width: 100%;
+    max-width: 260px;
+    vertical-align: middle;
 }
 
 

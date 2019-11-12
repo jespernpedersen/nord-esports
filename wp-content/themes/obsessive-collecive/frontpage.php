@@ -39,17 +39,12 @@ get_header();
             <div class="column">
                 <h2>About</h2>                        
                 <p>Marzipan candy canes apple pie croissant dessert gummies pastry jelly. Jelly-o cheesecake caramels. Wafer liquorice chocolate lemon drops apple pie gummi bears. Biscuit chocolate bar marzipan chocolate bar pastry marzipan topping.</p>
-
-<p>Jelly-o sweet roll tootsie roll cheesecake. Lemon drops toffee halvah. Soufflé dessert pie gummies danish dessert chocolate cake gummi bears. Tootsie roll donut marzipan wafer topping cupcake.</p>
-
-<p>Macaroon lemon drops donut. Macaroon bear claw jelly-o jelly-o sweet lemon drops. Gingerbread caramels macaroon apple pie dessert sweet soufflé sweet roll.</p>
-
-<p>Sweet sweet pudding bear claw marzipan lemon drops sweet roll gummi bears jelly. Gingerbread lemon drops chocolate cake gummi bears. Topping cotton candy cake wafer pudding sweet roll pie toffee sweet roll. Gummies powder gummi bears powder carrot cake marshmallow ice cream gingerbread liquorice. Apple pie cake tiramisu. Candy canes ice cream cake chocolate cake gummi bears topping oat cake. Lollipop jelly beans soufflé. Candy chocolate caramels.</p>
-
+                <p>Jelly-o sweet roll tootsie roll cheesecake. Lemon drops toffee halvah. Soufflé dessert pie gummies danish dessert chocolate cake gummi bears. Tootsie roll donut marzipan wafer topping cupcake.</p><p>Macaroon lemon drops donut. Macaroon bear claw jelly-o jelly-o sweet lemon drops. Gingerbread caramels macaroon apple pie dessert sweet soufflé sweet roll.</p>
+                <p>Sweet sweet pudding bear claw marzipan lemon drops sweet roll gummi bears jelly. Gingerbread lemon drops chocolate cake gummi bears. Topping cotton candy cake wafer pudding sweet roll pie toffee sweet roll.  </p>
                 <a class="btn grey-btn" href="#" title="">Read More</a><a class="btn secondary-btn" href="#" title="">Contact Us</a>
             </div>
             <div class="column">
-                <img src="/nord-esports/wp-content/uploads/2019/11/about1.jpg" title="" alt="" /> <!-- placeholder image -->
+                <img src="/nord-esports/wp-content/uploads/2019/11/about1.jpg" title="" alt="" />
             </div>
         </div>
     </section>
@@ -64,7 +59,7 @@ get_header();
         </div>
     </section>
     <!-- Blog -->
-    <section class="blog" class="green-bg">
+    <section class="blog">
         <div class="container">
             <h2>Blog</h2>
             <div class="grid-layout layout-3">
@@ -96,6 +91,15 @@ get_header();
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- Discord -->
+    <section class="discord">
+        <div class="container">
+            <h2>Join us on</h2>
+            <a href="https://discordapp.com/invite/mzs9AeW" title="Join our Discord here" target="_blank">
+                <img src="/nord-esports/wp-content/uploads/2019/11/Discord-LogoWordmark-Color.png" alt="Discord Logo" title="Join our Discord here" />
+            </a>
         </div>
     </section>
     <!-- Twitch / YouTube -->
