@@ -84,7 +84,7 @@ function jnp_create_events_custom_post() {
 		), 
 		'taxonomies'   => array(
 				'post_tag',
-				'category',
+				'category'
 		) 
 	));
 }
@@ -137,3 +137,7 @@ function mytheme_admin_bar_render() {
     $wp_admin_bar->remove_menu('comments');
 }
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+
+
+
+/* Custom Post Type Column Options */
