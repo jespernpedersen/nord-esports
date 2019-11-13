@@ -135,7 +135,7 @@ p {
     font-family: proxima-nova, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .overlay {
@@ -508,7 +508,7 @@ footer.site-footer nav li:last-of-type::after {
 }
 
 .blog .blog-item {
-    height: 222px;
+    height: 215px;
     /* placeholder */
 }
 
@@ -516,8 +516,9 @@ footer.site-footer nav li:last-of-type::after {
     height: 100%;
     padding: 17px 20px;
     text-align: center;
-    background-size: auto 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .blog .blog-item h3 {
@@ -551,11 +552,7 @@ footer.site-footer nav li:last-of-type::after {
 -----------------------------------------------
 */
 
-.sponsors .container {
-    /* padding: 0 0px; */
-}
-
-.sponsors .container .sponsor-gallery {
+.sponsors .container .sponsor-gallery .gallery {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -564,10 +561,9 @@ footer.site-footer nav li:last-of-type::after {
 
 .sponsors .container .sponsor-gallery img {
     max-height: 160px;
-    /* width: auto; */
 }
 
-.sponsors .container .sponsor-gallery img:not(:last-of-type) {
+.sponsors .container .sponsor-gallery figure:not(:last-of-type) {
     margin-right: 40px;
 }
 

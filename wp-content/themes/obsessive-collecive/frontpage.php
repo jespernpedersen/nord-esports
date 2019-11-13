@@ -70,48 +70,45 @@ get_header();
             </section>
             <?php
         }
+        wp_reset_query();
     }
     ?>
     <!-- Blog -->
     <section class="blog">
         <div class="container">
-            <h2>Blog</h2>
+            <h2><?php echo get_field("blog_title") ?></h2>   
             <div class="grid-layout layout-3">
-                <div class="blog-item">
-                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/blogfrontpage1.jpg') ">
-                        <div class="overlay-content">
-                            <h3>Title</h3>
-                            <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
-                            <a href="#" class="btn" title="">Read More</a>
+            <?php 
+                $posts = get_posts( array(
+                    'post_type'      => 'post',
+                    'order'          => 'DESC',
+                ));
+                
+                if( $posts ) {
+                    foreach( $posts as $post ) {
+                        ?>                  
+                        <div class="blog-item">
+                            <div class="bg-image overlay overlay-primary-small" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID);  ?>') ">
+                                <div class="overlay-content">
+                                    <h3><?php echo get_the_title(); ?></h3>
+                                    <p> <?php echo get_the_excerpt($post->ID); ?></p>
+                                    <a href="<?php echo get_permalink($post->ID); ?>" class="btn" title="">Read More</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/blogfrontpage2.jpg') ">
-                        <div class="overlay-content">
-                            <h3>Title</h3>
-                            <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
-                            <a href="#" class="btn" title="">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="bg-image overlay overlay-primary-small" style="background-image: url('/nord-esports/wp-content/uploads/2019/11/blogfrontpage3.jpg') ">
-                        <div class="overlay-content">
-                            <h3>Title</h3>
-                            <p>Jelly beans dragée tiramisu macaroon candy chocolate bar. Biscuit cheesecake halvah. Lemon drops fruitcake donut apple pie candy marzipan marzipan sesame snaps toffee.</p>
-                            <a href="#" class="btn" title="">Read More</a>
-                        </div>
-                    </div>
-                </div>
+                        <?php
+                    }
+                    wp_reset_query();
+                }
+            ?>
             </div>
         </div>
     </section>
     <!-- Discord -->
     <section class="discord">
         <div class="container">
-            <h2>Join us on</h2>
-            <a href="https://discordapp.com/invite/mzs9AeW" title="Join our Discord here" target="_blank">
+            <h2><?php echo get_field("discord_pretitle") ?></h2>
+            <a href="<?php echo get_field("discord_link") ?>" title="Join our Discord here" target="_blank">
                 <img src="/nord-esports/wp-content/uploads/2019/11/Discord-LogoWordmark-Color.png" alt="Discord Logo" title="Join our Discord here" />
             </a>
         </div>
@@ -121,7 +118,7 @@ get_header();
         <div class="container">
             <div class="twitch">
                 <iframe
-                    src="https://player.twitch.tv/?channel=monstercat&muted=true&autoplay=false"
+                    src="https://player.twitch.tv/?channel=<?php echo get_field("twitch_channel") ?>&muted=true&autoplay=false"
                     height="<height>"
                     width="<width>"
                     frameborder="<frameborder>"
@@ -131,7 +128,7 @@ get_header();
             </div><!-- .twitch end -->
             <div class="youtube-embed">
             <iframe id="ytplayer" type="text/html" width="100%" height="100%"
-            src="https://www.youtube.com/embed/NBsCzN-jfvA"
+            src="https://www.youtube.com/embed/<?php echo get_field("youtube_video") ?>"
             frameborder="0"></iframe>
             </div>
         </div>
@@ -140,12 +137,7 @@ get_header();
     <section class="sponsors">
         <div class="container">
             <div class="sponsor-gallery">
-                <img src="/nord-esports/wp-content/uploads/2019/11/lundsauto.png" alt="" title="" />
-                <img src="/nord-esports/wp-content/uploads/2019/11/hilden.png" alt="" title="" />
-                <img src="/nord-esports/wp-content/uploads/2019/11/adenait.png" alt="" title="" />
-                <img src="/nord-esports/wp-content/uploads/2019/11/superbrugsen.png" alt="" title="" />
-                <img src="/nord-esports/wp-content/uploads/2019/11/kk.png" alt="" title="" />  
-                <img src="/nord-esports/wp-content/uploads/2019/11/microbizz.png" alt="" title="" />         
+                <?php echo do_shortcode('[gallery category="8"]') ?>        
             </div>
         </div>
     </section>
