@@ -743,13 +743,13 @@ section.team {
     grid-column-gap: 150px;
 }
 
-.team.reverse .event-wrapper .xs-container {
+section.team:nth-of-type(even) .event-wrapper .xs-container {
     grid-auto-flow: dense;
     /* NEW */
     grid-template-columns: 1.7fr 3fr;
 }
 
-.team.reverse .event-wrapper .xs-container .text-wrapper {
+section.team:nth-of-type(even) .event-wrapper .xs-container .text-wrapper {
     grid-column: 2;
 }
 
@@ -761,7 +761,7 @@ section.team {
     line-height: 1.3;
 }
 
-.team.reverse .event-wrapper .text-wrapper {
+section.team:nth-of-type(even) .event-wrapper .text-wrapper {
     text-align: right;
 }
 
