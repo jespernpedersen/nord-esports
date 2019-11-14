@@ -462,6 +462,114 @@ footer.site-footer nav li:last-of-type::after {
     z-index: 3;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 708px;
+    max-width: 1280px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border: 2px solid #222;
+}
+
+.modal-master {
+    display: none;
+    position: fixed;
+    width: 100%;
+    max-width: 1280px;
+    height: 708px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    background-color: white;
+    border: 2px solid #222;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.modal-master .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.terms-and-conditions {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 50px;
+    margin-top: 80px;
+}
+
+.terms-and-conditions p {
+    font-size: 18px;
+}
+
+.terms-and-conditions h2 {
+    color: #222;
+}
+
+.modal-inner {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 25px;
+}
+
+.terms-and-conditions ul {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.terms-and-conditions ul li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.terms-and-conditions .btn {
+    margin-top: 20px;
+}
+
+.modal-active {
+    overflow: hidden;
+}
+
+body:before {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    content: "";
+    transition: 0.3s ease-in-out;
+    z-index: 9;
+}
+
+body.modal-active:before {
+    opacity: 0.7;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid #FFF;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    line-height: 36px;
+    text-align: center;
+}
+
 
 /* 
 -----------------------------------------------
@@ -929,110 +1037,43 @@ main.yellow #page-content h4 {
     margin-top: 25px;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 708px;
-    max-width: 1280px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    border: 2px solid #222;
-}
 
-.modal-master {
-    display: none;
-    position: fixed;
-    width: 100%;
-    max-width: 1280px;
-    height: 708px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 11;
-    background-color: white;
-    border: 2px solid #222;
-    box-shadow: 0px 0px 20px #000;
-}
+/* 
+-----------------------------------------------
+    PAGE: SCHEDULE
+-----------------------------------------------
+*/
 
-.modal-master .container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.terms-and-conditions {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    padding: 50px;
-    margin-top: 80px;
-}
-
-.terms-and-conditions p {
-    font-size: 18px;
-}
-
-.terms-and-conditions h2 {
-    color: #222;
-}
-
-.modal-inner {
-    height: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    font-size: 25px;
-}
-
-.terms-and-conditions ul {
-    margin-left: 20px;
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.terms-and-conditions ul li:not(:last-of-type) {
-    margin-bottom: 10px;
-}
-
-.terms-and-conditions .btn {
-    margin-top: 20px;
-}
-
-.modal-active {
-    overflow: hidden;
-}
-
-body:before {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: black;
-    opacity: 0;
-    pointer-events: none;
-    content: "";
-    transition: 0.3s ease-in-out;
-    z-index: 9;
-}
-
-body.modal-active:before {
-    opacity: 0.7;
-}
-
-.close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.ws-schedule tbody tr th {
     color: #FFF;
-    font-size: 16px;
-    text-decoration: none;
-    border: 2px solid #FFF;
-    border-radius: 100%;
-    height: 40px;
-    width: 40px;
-    line-height: 36px;
+    padding: 20px 30px;
+    background-color: var(--secondary-color);
+}
+
+.ws-schedule tbody tr:nth-of-type(odd) th {
+    background-color: var(--primary-color);
+}
+
+.ws-schedule td {
+    padding: 20px 30px;
+    background-color: black;
+    color: #FFF;
     text-align: center;
+    border: 1px solid #FFF;
+}
+
+.ws-schedule td span {
+    display: block;
+}
+
+.ws-schedule td.cat1 {
+    background-color: var(--primary-color);
+}
+
+.ws-schedule td.cat3 {
+    background-color: var(--game-csgo);
+}
+
+.ws-schedule td.cat4 {
+    background-color: var(--game-lol);
 }
