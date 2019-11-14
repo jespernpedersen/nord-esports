@@ -2023,7 +2023,34 @@ function ws_library(
 						"</a>";
 					}
 
-					$output .= "<span>". $item->starttime . " - " . ($item->starttime + $item->duration) . "</span>" . "</div>";
+					$end_time = $item->starttime + $item->duration;
+
+					$endtime_hour = floor($end_time);
+
+					if ( fmod( $end_time, 1 ) == 0.25 ) {
+						$endtime_minutes = "15";
+					} elseif ( fmod( $end_time, 1 ) == 0.50 ) {
+						$endtime_minutes = "30";
+					} elseif ( fmod( $end_time, 1 ) == 0.75 ) {
+						$endtime_minutes = "45";
+					} else {
+						$endtime_minutes = "00";
+					}
+
+					$starttime = $item->starttime;
+
+					if ( fmod( $starttime, 1 ) == 0.25 ) {
+						$starttime_minutes = "15";
+					} elseif ( fmod( $starttime, 1 ) == 0.50 ) {
+						$starttime_minutes = "30";
+					} elseif ( fmod( $starttime, 1 ) == 0.75 ) {
+						$starttime_minutes = "45";
+					} else {
+						$starttime_minutes = "00";
+					}
+
+
+					$output .= "<span>". $item->starttime . ":" . $starttime_minutes . " - " . $endtime_hour . ":" . $endtime_minutes . "</span>" . "</div>";
 
 					if ( $displaydescription == "cell" ) {
 						$output .= "<br />" . stripslashes( $item->description );
