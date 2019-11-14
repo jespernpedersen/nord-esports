@@ -37,19 +37,36 @@ get_header();
                                 <div class="cta-wrapper">
                                     <?php if (get_field("beginner_activate") == 1)  {
                                         ?>
-                                            <a href="#" class="btn" title="Click here to join the Beginner Team">Beginner</a>
+                                            <a href="void:()" class="btn beginner-btn" title="Click here to join the Beginner Team">Beginner</a>
                                         <?php
                                     }
                                     ?>
-                                    <a href="#" class="btn" title="Click here to join the Intermediate Team">Intermediate</a>
+                                    
+                                    <?php if (get_field("intermediate_activate") == 1)  {
+                                        ?>
+                                    <a href="void:()" class="btn intermediate-btn" title="Click here to join the Intermediate Team">Intermediate</a>
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                                 <?php 
                                 if (get_field("beginner_activate") == 1)  {
-                                    $shortcode = get_field("beginner_contact_form_shortcode");
+                                    $beginner_shortcode = get_field("beginner_contact_form_shortcode");
                                 ?>
-                                    <div class="modal">
+                                    <div class="modal beginner">
                                         <div class="modal-inner">
-                                            <?php echo do_shortcode($shortcode) ?>
+                                            <?php echo do_shortcode($beginner_shortcode) ?>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                                
+                                <?php 
+                                if (get_field("intermediate_activate") == 1)  {
+                                    $intermediate_shortcode = get_field("intermediate_contact_form_shortcode");
+                                ?>
+                                    <div class="modal intermediate">
+                                        <div class="modal-inner">
+                                            <?php echo do_shortcode($intermediate_shortcode) ?>
                                         </div>
                                     </div>
                                 <?php } ?>

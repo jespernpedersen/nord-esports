@@ -1,8 +1,14 @@
 jQuery(function() {
-    jQuery(".team .cta-wrapper .btn").click(function(e) {
+    jQuery(".team .cta-wrapper .beginner-btn").click(function(e) {
         jQuery("body").addClass("modal-active");
         jQuery(".modal-master").fadeIn();
-        var element = jQuery(this).parent().parent().find(".modal");
+        var element = jQuery(this).parent().parent().find(".modal.beginner");
+        element.fadeIn();
+    });
+    jQuery(".team .cta-wrapper .intermediate-btn").click(function(e) {
+        jQuery("body").addClass("modal-active");
+        jQuery(".modal-master").fadeIn();
+        var element = jQuery(this).parent().parent().find(".modal.intermediate");
         element.fadeIn();
     });
     jQuery(".close-master").click(function(e) {
