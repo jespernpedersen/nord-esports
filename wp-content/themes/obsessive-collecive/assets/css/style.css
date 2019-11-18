@@ -167,20 +167,27 @@ p {
     box-shadow: inset -30px 130px 135px var(--primary-color);
 }
 
+.overlay.hover-league-of-legends:hover:before,
 .overlay.overlay-game.league-of-legends:before {
     box-shadow: inset -30px 130px 135px var(--game-lol);
 }
 
+.overlay.hover-fortnite:hover:before,
 .overlay.overlay-game.fortnite:before {
     box-shadow: inset -30px 130px 135px var(--primary-color);
 }
 
+.overlay.hover-csgo:hover:before,
 .overlay.overlay-game.csgo:before {
     box-shadow: inset -30px 130px 135px var(--game-csgo);
 }
 
 .overlay-primary-small:before {
     box-shadow: inset -1px 67px 97px var(--primary-color);
+}
+
+.overlay-hover:before {
+    transition: 0.3s ease-in-out;
 }
 
 .overlay-content {
@@ -389,6 +396,41 @@ footer.site-footer nav li:after {
 
 footer.site-footer nav li:last-of-type::after {
     content: "";
+}
+
+footer.site-footer p {
+    font-size: 14px;
+}
+
+
+/* Social Media icons */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu-social-media {
+    text-align: right;
+}
+
+#menu-social-media li {
+    display: inline-block;
+}
+
+#menu-social-media li:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+#menu-social-media li a {
+    display: inline-block;
+    text-indent: -9999px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 

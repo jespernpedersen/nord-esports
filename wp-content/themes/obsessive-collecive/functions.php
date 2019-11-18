@@ -147,4 +147,24 @@ add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 
 
 
-/* Custom Post Type Column Options */
+/* Custom Widget Areas */
+function wpb_widgets_init() {
+ 
+    register_sidebar( array(
+        'name'          => 'Footer Address Info',
+        'id'            => 'footer-address-info',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="title">',
+        'after_title'   => '</h2>',
+    ) );
+	register_sidebar( array(
+        'name'          => 'Social Media Footer',
+        'id'            => 'social-media-footer',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'wpb_widgets_init' );

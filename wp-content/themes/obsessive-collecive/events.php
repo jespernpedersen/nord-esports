@@ -71,7 +71,7 @@ get_header();
                 if($is_post_featured != 1) {
                     ?>
                         <!-- Frontend View -->
-                        <div class="event-item" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>') ;">
+                        <div class="event-item overlay-hover overlay hover-<?php echo get_the_category($post->ID)[0]->slug; ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>') ;">
                             <!-- Category -->
                             <h3><?php echo get_the_category($post->ID)[0]->name; ?></h3>
                             <!-- Date -->

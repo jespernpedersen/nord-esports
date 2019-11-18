@@ -16,9 +16,13 @@
 			<div class="container">
 				<!-- Address Info -->
 				<div class="footer-address">
-					<a href="callto:+4512344556" class="tel" title="You can call us here">+45 12 34 45 56</a>
-					<a href="mailto:knes@gmail.com" class="email" title="You can mail us here">knes@gmail.com</a>
-					<address>Skolevej 7, 4600 Køge</address>
+				<?php
+					if ( is_active_sidebar( 'footer-address-info' ) ) : ?>
+						<div class="widget-area widget-area" role="complementary">
+						<?php dynamic_sidebar( 'footer-address-info' ); ?>
+						</div>
+						
+					<?php endif; ?>
 				</div>
 				<!-- Footer Menu -->
 				<nav>
@@ -31,11 +35,14 @@
 				</nav>
 				<!-- Social Media icons -->
 				<div class="social-icons">
-					<ul>
-						<li class="facebook-icon"><a href="#" title="View our Facebook here"></a></li>
-						<li class="twitter-icon"><a href="#" title="View our Twitter here"></a></li>
-						<li class="youtube-icon"><a href="#" title="View our YouTube here"></a></li>
-					</ul>
+					
+					<?php 
+					if ( is_active_sidebar( 'social-media-footer' ) ) : ?>
+						<div class="widget-area widget-area" role="complementary">
+						<?php dynamic_sidebar( 'social-media-footer' ); ?>
+						</div>
+						
+					<?php endif; ?>
 				</div>
 			</div>
 		</footer><!-- #colophon -->
