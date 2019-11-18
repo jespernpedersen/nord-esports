@@ -882,6 +882,11 @@ section.team {
     padding-bottom: 67px;
 }
 
+.coach .team .event-wrapper .event-bg-image {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .team .event-wrapper .event-bg-image:before {
     content: "";
     position: absolute;
@@ -932,6 +937,14 @@ section.team:nth-of-type(even) .event-wrapper .text-wrapper {
     color: #000;
     position: relative;
     z-index: 3;
+}
+
+.coach .team .btn {
+    margin-top: 0;
+}
+
+.coach .team h2 {
+    margin-bottom: 0;
 }
 
 .team .cta-wrapper {

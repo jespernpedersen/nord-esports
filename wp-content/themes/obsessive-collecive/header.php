@@ -55,7 +55,7 @@
                 <div id="cta-player-coach">
                     <span>Become a:</span>
                     <a href="/nord-esports/become-a-player/" class="btn-player" title="Become A Player">Player</a>
-                    <a href="#" class="btn-coach" title="">Coach</a>
+                    <a href="/nord-esports/become-a-coach/" class="btn-coach" title="Become A Coach">Coach</a>
                 </div>
             </div>
         </div><!-- .container -->
