@@ -56,7 +56,8 @@ get_header();
                                     <div class="modal beginner">
                                         <div class="modal-inner">
                                             <?php echo do_shortcode($beginner_shortcode) ?>
-                                        </div>
+                                        </div>                                     
+                                        <a href="void:()" class="close-btn">X</a>
                                     </div>
                                 <?php } ?>
                                 
@@ -67,7 +68,8 @@ get_header();
                                     <div class="modal intermediate">
                                         <div class="modal-inner">
                                             <?php echo do_shortcode($intermediate_shortcode) ?>
-                                        </div>
+                                        </div>      
+                                        <a href="void:()" class="close-btn">X</a>
                                     </div>
                                 <?php } ?>
                             </div>
