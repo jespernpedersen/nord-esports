@@ -73,6 +73,21 @@
         padding-right: 30px;
     }
     /* Header */
+    body {
+        padding-top: 75px;
+    }
+    header.site-header {
+        background-color: var(--middle-gray-color);
+        position: fixed;
+        top: 0;
+        z-index: 30;
+        width: 100%;
+        border-bottom: 2px solid #FFF;
+    }
+    .logged-in header.site-header {
+        position: absolute;
+        top: 46px;
+    }
     .header-wrapper {
         background-color: #f5f5f5;
     }
@@ -82,10 +97,81 @@
     }
     header.site-header .site-logo {
         max-width: 140px;
-        margin-left: -20px;
+        margin-left: -40px;
+    }
+    .menu-wrapper img {
+        position: relative;
+        z-index: 20;
+        cursor: pointer;
+    }
+    #cta-player-coach span {
+        width: 100%;
+    }
+    #cta-player-coach {
+        margin-bottom: 50px;
+    }
+    #cta-player-coach .btn-player,
+    #cta-player-coach .btn-coach {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 9px 15px 8px 15px;
+        padding-right: 10px;
+        color: var(--white-text-color);
+        text-decoration: none;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 21px;
+    }
+    #cta-player-coach .btn-coach {
+        background-color: var(--secondary-color);
+        padding-left: 30px;
+        margin-left: -4px;
+    }
+    #cta-player-coach .btn-player:after {
+        content: "";
+        background-color: transparent;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        transform: none;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 43px 26px 0 0;
+        border-color: var(--primary-color) transparent transparent transparent;
+        /* opacity: 0; */
+    }
+    .logo-small {
+        max-width: 35px;
+        margin-top: 50px;
     }
     /* Frontpage */
     /* Player / Coach */
+    .player-coach #cta-player-coach {
+        position: absolute;
+        z-index: 10;
+        bottom: -24px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .player-coach #cta-player-coach .btn-player,
+    .player-coach #cta-player-coach .btn-coach {
+        font-size: 26px;
+        padding: 9px 15px 8px 25px;
+    }
+    .player-coach #cta-player-coach .btn-coach {
+        padding-right: 20px;
+        padding-left: 35px;
+    }
+    .player-coach #cta-player-coach .btn-player:after {
+        border-width: 48px 26px 0 0;
+    }
+    .player-coach {
+        position: relative;
+    }
     .player-coach {
         color: #FFF;
         padding: 120px 0;
@@ -119,7 +205,7 @@
         box-shadow: inset 0px -100px 100px var(--secondary-color);
     }
     .mobile-menu {
-        position: absolute;
+        position: fixed;
         width: 100vw;
         height: 100vh;
         background-color: #FFF;
@@ -131,5 +217,124 @@
     }
     .mobile-menu.active {
         top: 0;
+        pointer-events: all;
+    }
+    #site-navigation {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: center;
+        width: 100%;
+    }
+    #site-navigation li a,
+    #site-navigation li a:hover,
+    #site-navigation li a:focus,
+    #site-navigation li a:active {
+        text-decoration: none;
+        color: #222;
+        text-transform: uppercase;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        transition: 0.3s ease-in-out;
+        font-size: 22px;
+    }
+    #site-navigation li:not(:last-of-type):after {
+        content: "/";
+        display: block;
+        font-weight: normal;
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* Footer */
+    footer.site-footer .container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+    footer.site-footer .container nav {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    footer.site-footer p,
+    footer.site-footer address {
+        text-align: center;
+        font-size: 18px;
+    }
+    #menu-social-media {
+        text-align: center;
+    }
+    footer .widget-area.widget-area {
+        width: 100%;
+    }
+    footer.site-footer nav li:last-of-type::after {
+        display: none;
+    }
+    footer {
+        padding-bottom: 20px;
+    }
+    /* About Section */
+    .about .container {
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .about .container .column:first-child {
+        margin-bottom: 40px;
+    }
+    .about .container p:last-of-type {
+        margin-bottom: 0;
+    }
+    .about h2 {
+        text-align: center;
+        font-size: 26px;
+    }
+    /* Featured Event Section */
+    .featured-event {
+        height: 463px;
+    }
+    .featured-event .event-wrapper .event-bg-image {
+        background-size: auto 100%;
+        background-position: center center;
+    }
+    /* Featured Blog Post */
+    .blog .blog-item .bg-image {
+        background-size: auto 100%;
+    }
+    .blog .blog-item {
+        height: 235px;
+    }
+    .blog h2 {
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    /* Discord */
+    section.discord a img {
+        max-width: 210px;
+    }
+    /* Twitch / YouTube */
+    .video-platforms .container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+    .youtube-embed {
+        height: 320px;
+    }
+    .video-platforms {
+        padding-bottom: 30px;
+    }
+    /* Sponsors */
+    .sponsors .container .sponsor-gallery .gallery {
+        flex-wrap: wrap;
+    }
+    .sponsors .container .sponsor-gallery figure {
+        width: 50%;
+        text-align: center;
+    }
+    .sponsors .container .sponsor-gallery figure:not(:last-of-type) {
+        margin-right: 0;
     }
 }

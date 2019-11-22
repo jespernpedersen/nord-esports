@@ -75,7 +75,7 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="menu-wrapper">
-                        <img src="/nord-esports/wp-content/themes/obsessive-collecive/assets/img/burger-menu.png" alt="Offcanvas Menu" />
+                        <img src="/nord-esports/wp-content/themes/obsessive-collecive/assets/images/menu-icon.png" alt="Offcanvas Menu" />
                     </div>
                     <div class="logo-wrapper">
                         <a href="/nord-esports/" title="Go to frontpage">
@@ -86,7 +86,21 @@
             </div><!-- .container -->
         </header><!-- #masthead -->
         <div class="mobile-menu">
-            
+        
+            <nav id="site-navigation" class="main-navigation" role="navigation">	
+            <div id="cta-player-coach">
+                        <span>Become a:</span>
+                        <a href="/nord-esports/become-a-player/" class="btn-player" title="Become A Player">Player</a>
+                        <a href="/nord-esports/become-a-coach/" class="btn-coach" title="Become A Coach">Coach</a>
+                    </div>
+                            <?php
+                                wp_nav_menu( array(
+                                    'theme_location' => 'menu-1',
+                                    'menu_id'        => 'primary-menu',
+                                ) );
+                            ?>
+            <img src="/nord-esports/wp-content/themes/obsessive-collecive/assets/images/nord-icon.png" alt="Star Icon" class="logo-small" />
+            </nav><!-- #site-navigation -->           
         </div>
     <?php
     }

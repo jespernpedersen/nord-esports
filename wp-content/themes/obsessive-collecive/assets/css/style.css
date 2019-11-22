@@ -384,6 +384,11 @@ footer.site-footer nav li a:active {
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     font-style: normal;
+    transition: 0.3s ease-in-out;
+}
+
+footer.site-footer nav li a:hover {
+    opacity: 0.8;
 }
 
 footer.site-footer nav li:after {
@@ -430,6 +435,15 @@ footer.site-footer p {
     height: 30px;
     border-radius: 4px;
     overflow: hidden;
+}
+
+#menu-social-media li {
+    opacity: 0.85;
+    transition: 0.3s ease-in-out;
+}
+
+#menu-social-media li:hover {
+    opacity: 1;
 }
 
 #menu-social-media li a:hover {
@@ -852,6 +866,16 @@ body.modal-active:before {
     color: #000;
     position: relative;
     z-index: 3;
+}
+
+.featured-event span {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #FFF;
+    font-style: italic;
+    font-size: 15px;
+    z-index: 10;
 }
 
 
