@@ -425,12 +425,45 @@ footer.site-footer p {
 
 #menu-social-media li a {
     display: inline-block;
-    text-indent: -9999px;
-    background-color: white;
+    text-indent: 9999px;
     width: 30px;
     height: 30px;
     border-radius: 4px;
     overflow: hidden;
+}
+
+#menu-social-media li a:hover {
+    cursor: pointer;
+}
+
+#menu-social-media li.discord {
+    background-image: url('/nord-esports/wp-content/themes/obsessive-collecive/assets/images/discord-icon.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#menu-social-media li.facebook {
+    background-image: url('/nord-esports/wp-content/themes/obsessive-collecive/assets/images/facebook-icon.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#menu-social-media li.instagram {
+    background-image: url('/nord-esports/wp-content/themes/obsessive-collecive/assets/images/instagram-icon.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#menu-social-media li.twitch {
+    background-image: url('/nord-esports/wp-content/themes/obsessive-collecive/assets/images/twitch-icon.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#menu-social-media li.youtube {
+    background-image: url('/nord-esports/wp-content/themes/obsessive-collecive/assets/images/youtube-icon.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 
