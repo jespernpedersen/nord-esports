@@ -10,6 +10,12 @@ get_header();
 
 <!-- Content -->
 <main>
+
+<?php 
+    if(!wp_is_mobile()) {
+        // Is Desktop
+    ?>
+
     <!-- Become A Player / Become A Coach -->
     <section class="players-coach">
         <div class="inner-wrapper">
@@ -141,6 +147,27 @@ get_header();
             </div>
         </div>
     </section>
+    <?php 
+        }
+    else {
+        // Is Mobile
+    ?>
+    <!-- Become A Player / Become A Coach -->
+    <section class="player-coach player overlay overlay-primary">
+        <div class="container">
+            <h2><?php echo get_field("player_title") ?></h2>
+            <p><?php echo get_field("player_paragraph_content") ?></p>
+            <a class="btn primary" href="<?php echo get_field("player_button__link") ?>" title=""><?php echo get_field("player_button_text") ?></a>
+        </div>
+    </section>
+    <section class="player-coach coach overlay overlay-secondary">
+        <div class="container">
+            <h2><?php echo get_field("coach_title") ?></h2>
+            <p><?php echo get_field("coach_paragraph_content") ?></p>                        
+            <a class="btn primary" href="<?php echo get_field("coach_button__link") ?>" title=""><?php echo get_field("coach_button_text") ?></a>
+        </div>
+    </section>
+    <?php } ?>
 </main>
 
 

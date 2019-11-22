@@ -73,6 +73,12 @@ function enqueue_team_scripts(){
 	wp_enqueue_script( 'teams-script', get_template_directory_uri() . '/assets/js/modal.js' );
 }
 
+
+	add_action( 'wp_enqueue_scripts', 'mobile_javascript' );
+	function mobile_javascript(){
+		wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/assets/js/mobile-menu.js' );
+	}
+
 function jnp_create_events_custom_post() {
 	register_post_type('event', 
 		array(

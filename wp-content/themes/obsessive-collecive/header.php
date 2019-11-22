@@ -19,46 +19,77 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
-<title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
-<?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js?ver=3.7.0" type="text/javascript"></script>
-<![endif]-->
-<?php wp_head(); ?>
-<link rel="stylesheet" href="https://use.typekit.net/lbk0riy.css">
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
+    <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
+    <!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js?ver=3.7.0" type="text/javascript"></script>
+    <![endif]-->
+    <?php wp_head(); ?>
+    <link rel="stylesheet" href="https://use.typekit.net/lbk0riy.css">
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-	<header class="site-header">
-        <div class="container">
-            <div class="header-wrapper">
-                <div class="logo-wrapper">
-                    <a href="/nord-esports/" title="Go to frontpage">
-                        <img src="/nord-esports/wp-content/uploads/2019/11/logo.png" alt="logo" title="Køge Nord eSports" class="site-logo" />
-                    </a>
-                </div>
 
-                <nav id="site-navigation" class="main-navigation" role="navigation">	
-                    <?php
-                        wp_nav_menu( array(
-                            'theme_location' => 'menu-1',
-                            'menu_id'        => 'primary-menu',
-                        ) );
-                    ?>
-                </nav><!-- #site-navigation -->
 
-                <div id="cta-player-coach">
-                    <span>Become a:</span>
-                    <a href="/nord-esports/become-a-player/" class="btn-player" title="Become A Player">Player</a>
-                    <a href="/nord-esports/become-a-coach/" class="btn-coach" title="Become A Coach">Coach</a>
+    <?php 
+    if(!wp_is_mobile()) {
+            // Is Desktop
+    ?>
+        <header class="site-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo-wrapper">
+                        <a href="/nord-esports/" title="Go to frontpage">
+                            <img src="/nord-esports/wp-content/uploads/2019/11/logo.png" alt="logo" title="Køge Nord eSports" class="site-logo" />
+                        </a>
+                    </div>
+
+                    <nav id="site-navigation" class="main-navigation" role="navigation">	
+                        <?php
+                            wp_nav_menu( array(
+                                'theme_location' => 'menu-1',
+                                'menu_id'        => 'primary-menu',
+                            ) );
+                        ?>
+                    </nav><!-- #site-navigation -->
+
+                    <div id="cta-player-coach">
+                        <span>Become a:</span>
+                        <a href="/nord-esports/become-a-player/" class="btn-player" title="Become A Player">Player</a>
+                        <a href="/nord-esports/become-a-coach/" class="btn-coach" title="Become A Coach">Coach</a>
+                    </div>
                 </div>
-            </div>
-        </div><!-- .container -->
-	</header><!-- #masthead -->
+            </div><!-- .container -->
+        </header><!-- #masthead -->
+    <?php 
+    }
+    else {
+        // Is Mobile
+        ?>
+        <header class="site-header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="menu-wrapper">
+                        <img src="/nord-esports/wp-content/themes/obsessive-collecive/assets/img/burger-menu.png" alt="Offcanvas Menu" />
+                    </div>
+                    <div class="logo-wrapper">
+                        <a href="/nord-esports/" title="Go to frontpage">
+                            <img src="/nord-esports/wp-content/uploads/2019/11/logo.png" alt="logo" title="Køge Nord eSports" class="site-logo" />
+                        </a>
+                    </div>
+                </div>
+            </div><!-- .container -->
+        </header><!-- #masthead -->
+        <div class="mobile-menu">
+            
+        </div>
+    <?php
+    }
+    ?>
 
 	<div id="main" class="wrapper">

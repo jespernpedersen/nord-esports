@@ -1,0 +1,135 @@
+/* 
+-----------------------------------------------
+    1280px - Smaller Desktop
+-----------------------------------------------
+*/
+
+
+/* Shared Down */
+
+@media only screen and (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/* Specific for View */
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {}
+
+
+/* 
+-----------------------------------------------
+    1024px - iPad Landscape
+-----------------------------------------------
+*/
+
+
+/* Shared Down */
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+
+/* Specfic for View */
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {}
+
+
+/* 
+-----------------------------------------------
+    768px - iPad Portrait
+-----------------------------------------------
+*/
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+
+/* Specfic for View */
+
+@media only screen and (max-width: 768px) and (min-width: 768px) {}
+
+
+/* 
+-----------------------------------------------
+    767px - Mobile
+-----------------------------------------------
+*/
+
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    /* Header */
+    .header-wrapper {
+        background-color: #f5f5f5;
+    }
+    .header-wrapper .logo-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    header.site-header .site-logo {
+        max-width: 140px;
+        margin-left: -20px;
+    }
+    /* Frontpage */
+    /* Player / Coach */
+    .player-coach {
+        color: #FFF;
+        padding: 120px 0;
+    }
+    .player-coach p {
+        color: #FFF;
+        z-index: 2;
+        position: relative;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .player-coach .btn {
+        position: relative;
+        z-index: 2;
+        color: #000;
+    }
+    .player {
+        background-image: url(/nord-esports/wp-content/uploads/2019/11/68446720_2543504322359731_4143733934070431744_n.jpg);
+        background-size: auto 100%;
+        background-position: center center;
+    }
+    .player:before {
+        box-shadow: inset 0px -100px 100px var(--primary-color);
+    }
+    .coach {
+        background-image: url(/nord-esports/wp-content/uploads/2019/11/becomeacoachnew-3.jpg);
+        background-size: auto 100%;
+        background-position: center center;
+    }
+    .coach:before {
+        box-shadow: inset 0px -100px 100px var(--secondary-color);
+    }
+    .mobile-menu {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: #FFF;
+        z-index: 15;
+        top: -100vh;
+        left: 0;
+        pointer-events: none;
+        transition: 0.5s ease-in-out;
+    }
+    .mobile-menu.active {
+        top: 0;
+    }
+}
